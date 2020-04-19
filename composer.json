@@ -1,0 +1,32 @@
+{
+    "name": "elementary-interactive/fiskally-server",
+    "description": "Fiskally Server",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Balázs Ercsey",
+            "email": "balazs.ercsey@elementary-interactive.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ElementaryInteractive\\FiskallyServer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ElementaryInteractive\\FiskallyServer\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ElementaryInteractive\\FiskallyServer\\FiskallyServerServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=7.1.0"
+    }
+}
