@@ -1,8 +1,9 @@
 {
-    "name": "elementary-interactive/fiskally-server",
-    "description": "Fiskally Server",
+    "name": "elementary-interactive/fiskally-engine",
+    "description": "Fiskally Engine",
     "type": "project",
     "license": "MIT",
+    "version": "dev-staging",
     "authors": [
         {
             "name": "Balázs Ercsey",
@@ -11,18 +12,18 @@
     ],
     "autoload": {
         "psr-4": {
-            "ElementaryInteractive\\FiskallyServer\\": "src/"
+            "ElementaryInteractive\\FiskallyEngine\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ElementaryInteractive\\FiskallyServer\\Tests\\": "tests/"
+            "ElementaryInteractive\\FiskallyEngine\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ElementaryInteractive\\FiskallyServer\\FiskallyServerServiceProvider"
+                "ElementaryInteractive\\FiskallyEngine\\FiskallyEngineServiceProvider"
             ]
         }
     },
