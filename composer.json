@@ -1,6 +1,6 @@
 {
-    "name": "elementary-interactive/fiskally-server",
-    "description": "Fiskally Server",
+    "name": "elementary-interactive/fiskally-engine",
+    "description": "Fiskally Engine",
     "type": "project",
     "license": "MIT",
     "version": "dev-staging",
