@@ -3,12 +3,12 @@
  * 
  */
 
-namespace ElementaryInteractive\FiskallyServer;
+namespace ElementaryInteractive\FiskallyEngine;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Http\Kernel;
 
-class MangoServiceProvider extends ServiceProvider
+class FiskallyEngineServiceProvider extends ServiceProvider
 {
     /** Bootstrap any application services.
      * 

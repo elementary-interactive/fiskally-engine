@@ -12,18 +12,18 @@
     ],
     "autoload": {
         "psr-4": {
-            "ElementaryInteractive\\FiskallyServer\\": "src/"
+            "ElementaryInteractive\\FiskallyEngine\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ElementaryInteractive\\FiskallyServer\\Tests\\": "tests/"
+            "ElementaryInteractive\\FiskallyEngine\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ElementaryInteractive\\FiskallyServer\\FiskallyServerServiceProvider"
+                "ElementaryInteractive\\FiskallyEngine\\FiskallyEngineServiceProvider"
             ]
         }
     },
