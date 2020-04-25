@@ -55,7 +55,7 @@ class FiskallyEngineServiceProvider extends ServiceProvider
     {
         /* Publishing database migrations.
          */
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         /** Loading webpage routings
          */
