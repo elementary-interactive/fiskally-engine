@@ -28,7 +28,6 @@
         }
     },
     "require": {
-        "php": ">=7.1.0",
-        "doctrine/dbal": "^4.0@dev"
+        "php": ">=7.1.0"
     }
 }
