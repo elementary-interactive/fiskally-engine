@@ -31,6 +31,10 @@ class FiskallyEngineServiceProvider extends ServiceProvider
 
         $this->registerResources();
 
+        $kernel->pushMiddlewareToGroup(
+            'web', ElementaryInteractive\FiskallyEngine\Http\Middleware\ValidContract::class
+        );
+
         //Blade::component('app.components.component', 'component');
     }
 
@@ -56,6 +60,8 @@ class FiskallyEngineServiceProvider extends ServiceProvider
         /* Publishing database migrations.
          */
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+        $this->load
 
         /** Loading webpage routings
          */
