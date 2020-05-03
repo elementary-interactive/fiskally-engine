@@ -21,7 +21,7 @@ class CreateContractsTable extends Migration
             $table->dateTime('valid_at')
                 ->nullable()
                 ->default(null);
-            $table->dateTime('expire_at')
+            $table->dateTime('expired_at')
                 ->nullable()
                 ->default(null);
             $table->timestamps();
