@@ -18,8 +18,12 @@ class CreateContractsTable extends Migration
                 ->primary();
             $table->longText('text');
             
-            $table->dateTime('valid_at');
-            $table->dateTime('expire_at');
+            $table->dateTime('valid_at')
+                ->nullable()
+                ->default(null);
+            $table->dateTime('expire_at')
+                ->nullable()
+                ->default(null);
             $table->timestamps();
             $table->softDeletes();
 
