@@ -23,8 +23,7 @@ class CreateContractsTable extends Migration
             $table->timestamps();
             $table->softDeletes();
 
-            $table->charset = 'utf8mb';
-            $table->collection = 'utf8mb_general_ci';
+            $table->collection = 'utf8mb_unicode_ci';
         });
     }
 
