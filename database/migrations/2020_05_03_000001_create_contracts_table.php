@@ -24,7 +24,7 @@ class CreateFailedJobsTable extends Migration
             $table->softDeletes();
 
             $table->charset = 'utf8mb';
-            $table->collection = 'utf8mb_general_ci'
+            $table->collection = 'utf8mb_general_ci';
         });
     }
 
