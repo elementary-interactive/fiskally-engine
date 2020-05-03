@@ -53,7 +53,7 @@ class FiskallyEngineServiceProvider extends ServiceProvider
 
     public function registerResources()
     {
-        /* Publishing database migrations.
+        /** Publishing database migrations.
          */
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 

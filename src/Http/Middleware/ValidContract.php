@@ -4,6 +4,7 @@ namespace ElementaryInteractive\FiskallyEngine\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
+use ElementaryIntearactive\FiskallyEngine\Models\Contract;
 
 class ValidContract
 {
@@ -16,9 +17,10 @@ class ValidContract
      */
     public function handle($request, Closure $next)
     {
-        dd(Auth::user->contract_accepted_at);
-        if ($request->age <= 200) {
-            return redirect('home');
+
+        if (is_null(Auth::user()->contract_accepted) || Contract::active()->id != Auth::user()->contract_accepted)
+        {
+            return redirect(route('app.contract'));
         }
 
         return $next($request);
